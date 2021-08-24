@@ -1,11 +1,14 @@
 print("Hello!")
 
-age = int(input("How old are you?: "))
+age_user = int(input("How old are you?: "))
+
+test(age_user)
 
 def test(age):
     if age > 18:
         print("You are of a good age!")
-        earnings = int(input("How much do you earn a month?: "))
+        earnings_user = int(input("How much do you earn a month?: "))
+        pay(earnings_user)
     elif age < 0:
         print("Please enter a valid age.")
         test(age)
